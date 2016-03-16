@@ -1,0 +1,44 @@
+/* Pas hier de opmaak aan voor deze specifieke template     */
+/* Alle basis is gelegd in template.css                     */
+/* Hierin is ook alle opmaak via Bootstrap 2.3.2 geregeld   */
+/* Verander hier niets in, want deze is via LESS geschreven */
+
+html {
+	font-size: 14px; /* Deze font size past ook het formaat van de headings aan. */
+}
+body {
+	color: #333; /* De tekstkleur is standaard #333 maar kan hier aangepast worden */
+}
+h1, h2, h3,
+a, a:link, a:visited {
+	color: crimson; /* De kleur van de grootste koppen en de links is crimson en kan hier aangepast worden */
+}
+.label-info[href], .badge-info[href] {
+	background: crimson; /* tags en badges krijgen dezelfde achtergrondklaur als de kleur van de links */
+	color: ivory;
+}
+
+
+/*
+/* Responsive happening here
+/* -------------------------------------------------- */
+
+/* Big desktops and more */
+@media (min-width: 1200px) {
+	
+}
+
+/* Regular desktops -- Alleen voor uitzonderingen gebruiken */
+@media (min-width: 980px) and (max-width: 1199px) {
+	
+}
+
+/* Tablets & small desktops only */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Phones only */
+@media (max-width: 767px) {
+
+}

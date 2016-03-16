@@ -1,0 +1,52 @@
+/* Fix for Android */
+.container { 
+  -webkit-animation: bugfix infinite 1s; 
+}
+@-webkit-keyframes bugfix { 
+  from { padding: 0; } 
+  to { padding: 0; } 
+}
+label { 
+  cursor: pointer;
+  user-select: none;
+}
+.nav-responsive {
+	.nav-toggle {
+		display: none;
+	}
+}
+@media screen and (max-width: 767px) {
+  .nav-responsive {
+		input[type="checkbox"] {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+    ul {
+//      display: none;
+			opacity: 0;
+//			height: 0;
+      max-height: 0;
+			overflow: hidden;
+			transition: max-height .3s, opacity .5s;
+      > li {
+        width: 100%;
+      }        
+    }
+    .nav-toggle {
+      position: relative;
+      display: block;
+      width: 100%;
+//    	&:after {
+//        position: absolute;
+//        content: "\2261";
+//    	}
+		}
+    input:checked ~ ul {
+			opacity: 1;
+			max-height: 3000px;
+    }
+  }
+}
+
+
